@@ -1,0 +1,94 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.inputField {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.addButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskItem {
+  display: flex; /* Postavite li element kao fleksibilan kontejner */
+  align-items: center; /* Poravnanje elemenata po vertikali */
+  justify-content: space-between; /* Postavljanje prostora između elemenata */
+  background-color: #fff;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.removeButton {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  background-color: #c82333;
+}
+
+/* Dodaj stil za prečrtavanje teksta za "completed" zadatke */
+.completed span {
+  text-decoration: line-through; /* Prečrtavanje teksta */
+}
+
+/* Stilizuj "Complete" dugme */
+.completeButton {
+  background-color: #28a745; /* Zelena boja za "Complete" dugme */
+  color: #fff; /* Bela boja teksta */
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: 8px; /* Dodaj malo margine da se izdvoji od drugih elemenata */
+  flex-shrink: 0; /* Ovo će sprečiti da se dugme "Complete" pomera */
+  min-width: 80px; /* Postavi minimalnu širinu za dugme */
+  text-align: center; /* Centriraj tekst u dugmetu */
+}
+
+.completeButton:hover {
+  background-color: #218838; /* Tamnija zelena boja na hover efektu */
+}
